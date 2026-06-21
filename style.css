@@ -308,3 +308,376 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+/* Base navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Highlight active link */
+.nav-links a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Mobile styles */
+.menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* IMPACT SECTION */
+
+.impact-section{
+    padding:80px 10%;
+    background:#f8f9fa;
+}
+
+.impact-section h2{
+    text-align:center;
+    color:#14532d;
+    margin-bottom:40px;
+}
+
+.impact-section h3{
+    color:#14532d;
+    margin-top:40px;
+    margin-bottom:15px;
+}
+
+.impact-section h4{
+    color:#222;
+    margin-top:20px;
+    margin-bottom:8px;
+}
+
+.impact-section p,
+.impact-section li{
+    line-height:1.9;
+    color:#444;
+}
+
+.impact-section ul{
+    margin-left:25px;
+}
+
+.impact-section blockquote{
+    margin-top:20px;
+    padding:25px;
+    background:#fff;
+    border-left:5px solid #14532d;
+    font-style:italic;
+    border-radius:10px;
+}.impact-section h3 {
+    color: #14532d;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+/* TESTIMONIALS SECTION */
+
+.testimonials-section{
+    padding:80px 10%;
+    background:#ffffff;
+}
+
+.testimonials-section h2{
+    text-align:center;
+    color:#14532d;
+    margin-bottom:15px;
+    position:relative;
+}
+
+.testimonials-section h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:#14532d;
+    margin:10px auto;
+    border-radius:2px;
+}
+
+.testimonial-intro{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 50px;
+    line-height:1.8;
+}
+
+.testimonial-card{
+    background:#f8f9fa;
+    padding:30px;
+    margin-bottom:25px;
+    border-left:5px solid #14532d;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.testimonial-card h3{
+    color:#14532d;
+    margin-bottom:5px;
+}
+
+.testimonial-card span{
+    display:block;
+    font-weight:600;
+    margin-bottom:15px;
+    color:#666;
+}
+
+.testimonial-card p{
+    line-height:1.9;
+    color:#444;
+    font-style:italic;
+}/* VISION IN ACTION */
+
+.vision-impact{
+    padding:80px 10%;
+    background:#f8f9fa;
+}
+
+.vision-impact h2{
+    text-align:center;
+    color:#14532d;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.vision-impact h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:#14532d;
+    margin:10px auto;
+    border-radius:2px;
+}
+
+.vision-impact p{
+    line-height:1.9;
+    color:#444;
+    margin-bottom:20px;
+    text-align:justify;
+}.footer{
+    background:white;
+    color:#14532d;
+    text-align:center;
+    padding:25px;
+}
+
+.footer p{
+    color:#14532d;
+    font-weight:600;
+}
+/* MODERN CONTACT SECTION */
+
+.contact-section{
+    padding:100px 10%;
+    background:linear-gradient(135deg,#f8f9fa,#ffffff);
+}
+
+.contact-section h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#14532d;
+    margin-bottom:15px;
+    position:relative;
+}
+
+.contact-section h2::after{
+    content:"";
+    width:100px;
+    height:4px;
+    background:#14532d;
+    display:block;
+    margin:12px auto;
+    border-radius:10px;
+}
+
+.contact-intro{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 50px;
+    color:#555;
+    line-height:1.8;
+}
+
+/* CONTACT CARDS */
+
+.contact-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.contact-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+.contact-card h3{
+    color:#14532d;
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* CONTACT FORM */
+
+.contact-form-container{
+    max-width:800px;
+    margin:auto;
+}
+
+.contact-form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#14532d;
+    outline:none;
+    box-shadow:0 0 10px rgba(20,83,45,0.15);
+}
+
+.contact-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#14532d;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#1c6b3d;
+}
+
+/* CTA BOX */
+
+.cta-box{
+    margin-top:60px;
+    text-align:center;
+    padding:50px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#1fff1f,#1c6b3d);
+    color:white;
+    box-shadow:0 15px 35px rgba(20,83,45,0.25);
+}
+
+.cta-box h3{
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.cta-box p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:white;
+    color:#14532d;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px);
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    color: #14532d;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+

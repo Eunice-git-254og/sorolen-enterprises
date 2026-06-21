@@ -25,4 +25,20 @@ function showOnScroll() {
 
 window.addEventListener('scroll', showOnScroll);
 showOnScroll();
-</script>
+// Toggle menu on mobile
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links a');
+
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+// Highlight active link when clicked
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    navLinks.classList.remove('show'); // close menu after click (mobile)
+  });
+});

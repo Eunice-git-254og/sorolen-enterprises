@@ -29,35 +29,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
     </nav>
 </header>
-<button class="dash-btn" onclick="openSidebar()">
-    ☰ Dashboard
-</button>
-
-<div id="sidebar" class="sidebar">
-    <span class="close-btn" onclick="closeSidebar()"></span>
-
-    <ul>
-    <li onclick="scrollToSection('hero')">Home</li>
-    <li onclick="scrollToSection('about')">About</li>
-    <li onclick="scrollToSection('services')">Services</li>
-    <li onclick="scrollToSection('gallery')">Gallery</li>
-    <li onclick="scrollToSection('contact')">Contact</li>
-</ul>
-</div>
-
-
-<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
-<script>
-function openSidebar() {
-    document.getElementById("sidebar").style.left = "0";
-    document.getElementById("overlay").style.display = "block";
-}
-
-function closeSidebar() {
-    document.getElementById("sidebar").style.left = "-260px";
-    document.getElementById("overlay").style.display = "none";
-}
-</script>
 
 <section class="hero">
     <div class="hero-content">
@@ -245,10 +216,10 @@ Our gallery showcases real livestock operations including grazing, fattening, an
 
 <div class="gallery-grid">
 
-  <img src="images/cattle1.jpeg" onclick="openLightbox(this)">
-  <img src="images/cattle2.jpeg" onclick="openLightbox(this)">
-  <img src="images/cattle3.jpeg" onclick="openLightbox(this)">
   <img src="images/cattle4.jpeg" onclick="openLightbox(this)">
+  <img src="images/cattle5.jpeg" onclick="openLightbox(this)">
+  <img src="images/videos/cattle6.jpeg" onclick="openLightbox(this)">
+  <img src="images/cattle7.jpeg" onclick="openLightbox(this)">
 </div>
 
 <!-- LIGHTBOX -->
@@ -269,7 +240,8 @@ Our gallery showcases real livestock operations including grazing, fattening, an
         </p>
 
         <div class="testimonial-card">
-            <h3>Joseph Ole Saitoti</h3>
+            <h3>Ntimana Leshao
+            </h3>
             <span>Livestock Farmer, Kajiado County</span>
             <p>
                 "Before working with Sorolen Enterprises, I relied on brokers who often offered low prices for my cattle. The prices changed from one buyer to another, making it difficult to plan for my family's future. Sorolen introduced transparent livestock purchasing and prompt payments. The improved income has enabled me to pay school fees, improve my homestead, and invest in better livestock management. My family now enjoys greater financial stability."

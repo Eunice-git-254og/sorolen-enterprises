@@ -42,3 +42,20 @@ links.forEach(link => {
     navLinks.classList.remove('show'); // close menu after click (mobile)
   });
 });
+function openSidebar() {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.left = "-260px";
+    document.getElementById("overlay").style.display = "none";
+}<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+
+    closeSidebar(); // closes menu after clicking
+}
+</script>

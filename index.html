@@ -29,6 +29,35 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
     </nav>
 </header>
+<button class="dash-btn" onclick="openSidebar()">
+    ☰ Dashboard
+</button>
+
+<div id="sidebar" class="sidebar">
+    <span class="close-btn" onclick="closeSidebar()"></span>
+
+    <ul>
+    <li onclick="scrollToSection('hero')">Home</li>
+    <li onclick="scrollToSection('about')">About</li>
+    <li onclick="scrollToSection('services')">Services</li>
+    <li onclick="scrollToSection('gallery')">Gallery</li>
+    <li onclick="scrollToSection('contact')">Contact</li>
+</ul>
+</div>
+
+
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+<script>
+function openSidebar() {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.left = "-260px";
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
 
 <section class="hero">
     <div class="hero-content">

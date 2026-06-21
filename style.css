@@ -51,7 +51,7 @@ cursor:pointer;
 height:90vh;
 background:
 linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url("https://images.unsplash.com/photo-1516467508483-a7212febe31a");
+url(images/hero-cattle.jpeg);
 background-size:cover;
 background-position:center;
 display:flex;
@@ -175,4 +175,11 @@ display:block;
 .hero h1{
 font-size:2rem;
 }
+}
+video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
 }
